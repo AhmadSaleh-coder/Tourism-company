@@ -1,47 +1,240 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Safrni</title>
     <script type="text/html" src="{require('index.js')}"></script>
 </head>
+
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="navbar custom-navbar navbar-expand-lg">
-              <div class="container">
-                    <div class="navbar-header">
-                       <button class="navbar-toggler btn btn-icon collapsed"  data-toggle="collapse" data-target="#navbar-collapsed-menu">
-                            <i class="fas fa-bars"></i>
-                       </button>
-                        <a href="." class="navbar-brand">
-                            <img src="./images/logo.png" alt=" شركة سفرني">
-                        </a>
+    <header class="text-center">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar custom-navbar navbar-expand-md wow animate__animated animate__rotateInDownLeft">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button class="navbar-custom-collapse navbar-toggler btn btn-icon collapsed" data-toggle="collapse"
+                                data-target="#navbar-collapsed-menu">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                            <a href="." class="navbar-logo">
+                                <img src="./images/logo.png" style=" width: 30%;" alt="شركة سفرني">
+                            </a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./index.html">الصفحة الرئيسية</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tour-journey.html"> الجولة السياحية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html"> تسجيل الدخول</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                      <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
-  
-                          <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                  <a class="nav-link" href="./index.html">الصفحة الرئيسية</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="">خدماتنا</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="">الجولات السياحية </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href=""> تواصل معنا </a>
+                </nav>
+            </div>
+
+            <div class="page-heading">
+                <h1 class="wow animate__animated animate__fadeInUp"> سفرني للسياحة والسفر</h1>
+                <br>
+                <p class="wow animate__animated animate__fadeInDown"> الشركة السياحية الأفضل في الوطن العربي، هدفنا
+                    مساعدتك وتيسير أمورك، لا تتردد بالتواصل معنا فنحن هنا
+                    لنساعدك على إيجاد كل ما تحتاج له. إن كنت تبحث عن سكن أو جولة سياحية لتقضي أفضل الأوقات فقد وجدت طلبك
+                </p>
+
+                <a class="btn btn-primary wow animate__animated animate__backInLeft" href="#services" role="button">
+                    خدماتنا</a>
+                <a class="btn btn-primary wow animate__animated animate__backInRight" href="#tours"
+                    role="button">الجولات السياحية</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="text-center custom-title"> خدماتنا</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./images/icons/home.png" class="card-img-top" alt="..." style="width: 25%;">
+                        <div class="card-body">
+                            <h4 class="card-text">حجز سكن</h4>
+                            <p class="card-text">نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة الرائعة
+                                والقريبة من جميع
+                                الخدمات.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./images/icons/car.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text">حجز سيارة</h4>
+                            <p class="card-text"> نقدم لكم خدمة حجز السيارات سواءً سيارات الأوتوماتيك أو السيارات
+                                العادي.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card"">
+                        <img src=" ./images/icons/tour.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text">جولات سياحية</h4>
+                            <p class="card-text">جولات سياحية خاصة مع أمهر السائقين كما نقدم جولات جماعية بأحدث الباصات
+                                مع أفضل المرشدين السياحيين الذين يُجيدون اللغة العربية ولإنجليزية.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./images/icons/reception.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text"> الاستقبال من المطار</h4>
+                            <p class="card-text">نقدم لكم خدمة الاستقبال من المطار وتوديعكم في المطار بحيث يكون مندوبنا
+                                متواجد دائمًا في خدمتكم أثناء وصولكم أو ذهابكم للمطار مع أفضل وسائل النقل.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tours" id="tours">
+        <div class="container">
+            <div class="custom-title text-center">
+                <h2>الجولات السياحية</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src=" ./images/Istanbul.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">اسطنبول </h5>
+                            <p class="card-text">تركيا تمتلك موقعًا استراتيجيًّا طبيعيًّا يجعل منها دولة متعدّدة
+                                المناخات، وذلك يمنح تركيا طبيعة ساحرة خلّابة يجعلها مقصد السائحين الذين يقطعون آلاف
+                                الكيلو مترات ليصلوا إليها ويقضوا فيها أيامًا من أجمل أيّام عمرهم
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">متوسط السعر : <span>920 دولار لـ لشخصين</span></li>
+                            <li class="list-group-item">عدد الأشخاص: <span>شخصين</span></li>
+                            <li class="list-group-item">مدة الرحلة السياحية : <span>7 أيام 6 ليالي </span></li>
+
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary d-block" role="button"> خطوات الرحلة</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card"">
+                        <img src=" ./images/egypt.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">مصر </h5>
+                            <p class="card-text">
+                                وتعد مصر من أبرز الدول السياحية في العالم بما تستحوذ عليه من أعداد السائحين الوافدين في
+                                العالم، وتميزها بوفرة المزارات السياحية على اختلاف أنواعها، وانتشار المعابد والمتاحف
+                                والآثار والمباني التاريخية والفنية والحدائق على أرضها
+                            </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">متوسط السعر : <span>730 دولار لـ لشخصين</span></li>
+                            <li class="list-group-item">عدد الأشخاص: <span>شخصين</span></li>
+                            <li class="list-group-item">مدة الرحلة السياحية : <span>5 أيام 4 ليالي </span></li>
+
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary d-block" role="button"> خطوات الرحلة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-us" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="map" class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178653926922!2d55.27218771414993!3d25.197196983896205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2slb!4v1616668140163!5m2!1sen!2slb"
+                            style="border:0; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info">
+                        <h3>
+                            تواصل معنا
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                لبنان-بيروت شارع الحمرا يجانب الجامعة الامريكية
                             </li>
-                              
-                          </ul>
-                     </div>
-                  </div>
-              </nav>
-          </div>
-    </div>
+                            <li>
+                                <i class="fas fa-phone-square-alt"></i>
+                                +961-3338655
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                safrni-tourism@hotmail.com
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="contact text-center">
+            <div class="overlay">
+                <h3>تابعنا على وسائل التواصل الاجتماعية</h3>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <p>
+                    All rights are reserved &#169 2021
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

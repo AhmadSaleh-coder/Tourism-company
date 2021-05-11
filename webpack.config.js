@@ -7,6 +7,7 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
     entry: {
         app: './src/index.js'
+       
     },
 
     output: {
@@ -44,6 +45,7 @@ module.exports = {
                     {
                       loader: MiniCssExtractPlugin.loader,
                       options: {
+                        publicPath: '../',
                         esModule: false,//هذه الإضافة
                       },
                     },
@@ -52,17 +54,34 @@ module.exports = {
               },
 
               {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpg|jpe?g|gif)$/i,
                 use: [
                   {
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
-                        outPath: "images",
+                        outpuPath: "images",
+                        esModule: false,
                     }
                   },
                 ],
               },
+
+              {
+                test: /\.(svg|eot|woff|woff2|ttf)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outpuPath: "fonts",
+                        esModule: false,
+                    }
+                  },
+                ],
+              },
+
+              
 
 
         ],
@@ -72,6 +91,16 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
+        }),
+
+        new HtmlWebpackPlugin({
+          filename: "tour-journey.html",
+          template: "./src/tour-journey.html",
+        }),
+
+        new HtmlWebpackPlugin({
+          filename: "login.html",
+          template: "./src/login.html",
         }),
 
         new MiniCssExtractPlugin({

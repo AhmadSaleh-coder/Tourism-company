@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safrni | Login</title>
+</head>
+
+<body>
+    <div class="signup">
+        <div class="container">
+            <div class="custom-title text-center">
+                <h1> تسجيل حساب جديد</h1>
+                <a href="./index.html"><i class=" awesome fas fa-sign-in-alt"></i></a>
+            </div>
+            <form id="myForm">
+                <div class="form-group">
+                    <label> الاسم: </label>
+                    <input type="text" class="form-control" id="fullname" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>البريد الإلكتروني:</label>
+                        <input type="email" class="form-control" id="Email" placeholder="البريد الإلكتروني" require>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>تاريخ الميلاد :</label>
+                        <br>
+                        <input type="date" class="form-control" id="birthday" name="birthday" required>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>كلمة المرور: </label>
+                        <input type="password" class="form-control" id="password" placeholder="كلمة المرور" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>تأكيد كلمة المرور: </label>
+                        <input type="password" class="form-control" id="confirm_password"
+                            placeholder="تأكيد كلمة المرور" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+
+                        <label class="form-check-label"><input class="form-check-input" type="checkbox"
+                                id="Check">الموافقة على كافة الشروط والاحكام </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">إنشاء حساب جديد</button>
+                <a href="" class="account" data-toggle="modal" data-target="#myModal">هل لديك حساب؟</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <h5>تسجيل الدخول</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label>البريد الإلكتروني:</label>
+                            <input type="email" class="form-control" name="username" id="email"
+                                placeholder="البريد الإلكتروني">
+                            <label for="Password"> كلمة المرور:</label>
+                            <input type="password" class="form-control" name="password" id="password"
+                                placeholder=" كلمة المرور">
+                        </div>
+                        <button type="button" class="btn btn-primary">تسجيل الدخول</button>
+                        <a href="">هل نسيت كلمة المرور؟</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
