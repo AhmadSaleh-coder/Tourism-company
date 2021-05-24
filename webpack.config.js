@@ -103,6 +103,21 @@ module.exports = {
           template: "./src/login.html",
         }),
 
+        new HtmlWebpackPlugin({
+          filename: "egypt-tour.html",
+          template: "./src/egypt-tour.html",
+        }),
+
+        new HtmlWebpackPlugin({
+          filename: "istanbul-tour.html",
+          template: "./src/istanbul-tour.html",
+        }),
+
+        new HtmlWebpackPlugin({
+          filename: "signup.html",
+          template: "./src/signup.html",
+        }),
+
         new MiniCssExtractPlugin({
             filename: "css/style.css"
         }),

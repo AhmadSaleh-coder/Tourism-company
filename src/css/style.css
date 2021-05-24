@@ -23,6 +23,7 @@ header {
     background-position: center center;
     margin: 0;
     padding-top: 20px;
+    height: 100vh;
 }
 
 .custom-navbar {
@@ -254,16 +255,11 @@ footer .overlay p {
 
 #ToursIndex .card .card-body {
     background-color: #6fa6c6;
-    height: 500px;
+    height: 250px;
 }
 
 #ToursIndex .card .card-body h5 {
     font-size: 30px;
-    color: #fff;
-}
-
-#ToursIndex .card .card-body p {
-    font-size: 16px;
     color: #fff;
 }
 
@@ -290,36 +286,98 @@ footer .overlay p {
     ;
 }
 
-.tours-gallery .custom-title h2 {
+#egypt-tour .tours-travels {
+    background-image: url(/src/images/bg-4.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#istanbul-tour .tours-travels {
+    color: #fff;
+    background-image: url(/src/images/bg-3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.tours-travels .card-body .card-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 30px auto;
+}
+
+.tours-travels .card-body .card-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+.tours-travels .card-body ul li {
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+}
+
+#istanbul-tour .tours-travels .card-body ul li {
+    background-color: rgb(44, 44, 44);
+    font-size: 18px;
+}
+
+.custom-title h2 {
     font-size: 50px;
+    position: relative;
 }
 
-.tours-gallery .tour-trip {
-    margin-bottom: 100px;
+.back-icon {
+    color: #4169E1;
+    position: absolute;
+    top: 25px;
+    left: 20px;
 }
 
-.tours-gallery .tour-trip h3 {
+.tour-trip {
+    padding-bottom: 70px;
+}
+
+.tour-trip h3 {
     font-size: 30px;
     color: #4169e1;
 }
 
-.tours-gallery .tour-trip img {
+.tour-trip img {
     margin-bottom: 8px;
     height: 200px;
     transition: all .5s ease;
 }
 
-.tours-gallery .tour-trip img:hover {
+.tour-trip img:hover {
     cursor: pointer;
     height: 215px;
     width: 500px;
 }
 
-.signup {
+#egypt-tour {
+    height: 100%;
+    background-color: #FCAE5D;
+}
+
+#istanbul-tour {
+    height: 100%;
+    background-color: rgb(36, 35, 35);
+}
+
+.signup, .login {
     background-image: url(/src/images/bg-2.jpg);
     background-position: center center;
     background-size: cover;
+   
+}
+
+.signup {
     height: 100;
+}
+
+.login {
+    height: 100vh;
 }
 
 form {
@@ -362,45 +420,6 @@ form {
     margin-bottom: 20px;
 }
 
-#myModal h5 {
-    text-align: center;
-    color: #5d9fd9;
-}
-
-#myModal label {
-    float: right;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-#myModal ::placeholder {
-    float: right;
-    color: #5d9fd9;
-}
-
-#myModal input {
-    margin-bottom: 20px;
-}
-
-#myModal .modal-body {
-    background-color: #5d9fd9;
-}
-
-#myModal button {
-    float: right;
-}
-
-#myModal a {
-    float: left;
-    color: #fff;
-    transform: translateY(5px);
-}
-
-#myModal a:hover {
-    text-decoration: none;
-    color: red;
-}
-
 @media (max-width: 1199px) {
     .services .card img {
         transform: translateX(-165px);
@@ -421,7 +440,6 @@ form {
         background-color: #5d9fc7;
     }
 }
-
 
 @media (max-width: 768px) {
     .navbar-logo {
@@ -494,6 +512,4 @@ form {
     }
 }
 
-@media(max-width:500px){
-    
-}
+@media(max-width:500px) {}
