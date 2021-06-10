@@ -1,0 +1,311 @@
+@import "./_variables";
+@import "./_egyptTour.scss";
+@import "./_istanbulTour.scss";
+
+header .page-heading {
+    h1 {
+        font-size: 66px;
+        font-weight: bold;
+        line-height: 75px;
+        padding-top: 50px;
+        color: $white_color;
+    }
+    a {
+        font-size: 19px;
+        background-color: $white_color;
+        color: $whiteblue_color;
+        border-color: $white_color;
+        border-radius: 0px;
+        line-height: 25px;
+        margin-top: 50px;
+        padding: 10px 20px;
+        margin-right: 10px;
+        margin-bottom: 150px;
+        &:hover:active:focus {
+            background-color: $whiteblue_color;
+            color: $white_color;
+            border-color: $whiteblue_color;
+        }
+    }
+    p {
+        font-size: 19px;
+        color: $white_color;
+        line-height: 25px;
+        width: 40%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+}
+
+#navbar-collapsed-menu {
+    ul li {
+        margin: 0 auto;
+    }
+    ul li a {
+        color: $white_color;
+        font-size: 18px;
+        display: inline-block;
+        &:hover {
+            background-color: $whiteblue_color;
+            font-size: 18px;
+        }
+    }
+}
+
+.tours {
+    margin-bottom: 50px;
+    .card {
+        p {
+            font-size: 15px;
+            line-height: 25px;
+            color: #9c9c9c;
+        }
+        h5 {
+            font-size: 24px;
+            color: #555;
+        }
+        .list-group-item {
+            font-size: 24px;
+            color: #555;
+            span {
+                font-size: 18px;
+                line-height: 25px;
+                color: #9c9c9c;
+            }
+        }
+        .card-body {
+            a {
+                background-color: $whiteblue_color;
+                border-color: $whiteblue_color;
+                border-radius: 0px;
+                transition: all 0.5s ease;
+            }
+            &:hover:active:focus {
+                background-color: $darkblue;
+                border-color: $darkblue;
+            }
+        }
+    }
+    .custom-title h2 {
+        font-size: 50px;
+    }
+}
+
+.custom-title::before {
+    content: "";
+    position: absolute;
+    right: 39%;
+    top: 130px;
+    width: 250px;
+    height: 2px;
+    background-color: $whiteblue_color;
+}
+footer {
+    background-color: #5d9fd9;
+    padding: 30px 0;
+
+    .overlay {
+        h3 {
+            font-size: 30px;
+            margin: 0 auto 30px;
+            color: $white_color;
+        }
+        ul li a {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            display: block;
+            background-color: rgba(255, 255, 255, 0.14);
+            color: $white_color;
+            font-size: 1.2em;
+            transition: all 0.5s ease;
+        }
+        p {
+            color: $white_color;
+        }
+        ul li {
+            margin: 0 5px;
+            &:hover:active:focus {
+                background-color: $darkblue;
+            }
+        }
+        hr {
+            width: 25%;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 50px;
+        }
+    }
+}
+
+#ToursIndex .card {
+    .card-header {
+        font-size: 40px;
+        color: $whiteblue_color;
+        line-height: 60px;
+    }
+    .card-body {
+        background-color: $whiteblue_color;
+        height: 250px;
+        h5 {
+            font-size: 30px;
+            color: $white_color;
+        }
+        ul li {
+            font-size: 15px;
+            color: $whiteblue_color;
+        }
+        a {
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: $white_color;
+            color: $whiteblue_color;
+            font-size: 20px;
+            border-color: $white_color;
+            border-radius: 0px;
+            transition: all 0.5s ease;
+            &:hover:active:focus {
+                background-color: rgba(255, 255, 255, 0.8);
+                border-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+}
+
+.back-icon {
+    color: $darkblue;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.tour-trip {
+    padding-bottom: 70px;
+    h3 {
+        font-size: 30px;
+        color: $darkblue;
+    }
+    img {
+        margin-bottom: 8px;
+        height: 200px;
+        transition: all 0.5s ease;
+        &:hover {
+            cursor: pointer;
+            height: 215px;
+            width: 500px;
+        }
+    }
+}
+.signup,
+.login {
+    background-image: url(/src/images/bg-2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.signup {
+    height: 100;
+    &::placeholder {
+        float: right;
+    }
+    h1 {
+        color: $white_color;
+    }
+    ¨ button {
+        margin-bottom: 20px;
+    }
+    label {
+        color: $white_color;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .custom-title .awesome {
+        font-size: 100px;
+        transform: translate(0, 50px);
+        color: $white_color;
+    }
+}
+
+.account {
+    float: left;
+    color: $white_color;
+    padding-bottom: 20px;
+    &:hover {
+        color: red;
+        text-decoration: none;
+    }
+}
+
+.custom-navbar {
+    width: 100%;
+    background-color: transparent;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    .container {
+        padding: 0;
+        .navbar-logo {
+            margin-left: 30px;
+            margin-top: 4px;
+        }
+    }
+}
+
+.contact-us {
+    background-color: #f0f8ff;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    .info {
+        h3 {
+            font-size: 35px;
+            line-height: 50px;
+            color: #5d9fd9;
+            font-weight: bold;
+        }
+        ul li {
+            display: block;
+            font-size: 18px;
+            line-height: 25px;
+            color: #5d9fd9;
+            margin-bottom: 15px;
+            margin-right: 10px;
+        }
+        ul {
+            padding: 0;
+        }
+        ul li i {
+            margin-left: 6px;
+        }
+    }
+}
+.services .card {
+    img {
+        padding-top: 15px;
+        width: 25%;
+        transform: translateX(-200px);
+    }
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        color: #9c9c9c;
+    }
+    h4 {
+        font-size: 24px;
+        color: #555;
+    }
+}
+
+.tours-travels .card-body{
+    .card-title {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        margin: 30px auto;
+    }
+    .card-text {
+        text-align: center;
+        font-size: 30px;
+    }
+    ul li {
+        background-color: transparent;
+        font-size: 20px;
+        text-align: center;
+    }
+} 

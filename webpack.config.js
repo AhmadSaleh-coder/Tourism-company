@@ -39,18 +39,18 @@ module.exports = {
                 ],
             },
 
-            {
-                test: /\.css$/,
+              {
+                test: /\.(sa|sc|c)ss$/,
                   use: [
                     {
-                      loader: MiniCssExtractPlugin.loader,
+                      loader: MiniCssExtractPlugin.loader, 
                       options: {
-                        publicPath: '../',
-                        esModule: false,//هذه الإضافة
-                      },
+                        publicPath: '../' 
+                      }
                     },
                     'css-loader',
-                  ],
+                    'sass-loader'
+                  ]
               },
 
               {

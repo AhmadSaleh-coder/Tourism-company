@@ -1,0 +1,15 @@
+
+#istanbul-tour {
+    height: 100%;
+    background-color: rgb(36, 35, 35);
+    .tours-travels {
+        color: $white_color;
+        background-image: url(/src/images/bg-3.jpg);
+        background-position: center center;
+        background-size: cover;
+        .card-body ul li {
+            background-color: rgb(44, 44, 44);
+            font-size: 18px;
+        }
+    }
+}
